@@ -16,18 +16,6 @@ body {
   color: #202124;
 }
 
-body::before {
-  content: " ";
-  display: block;
-  top: 0;
-  height: max(min(4vw, 51px), 40px);
-  margin-bottom: min(3vw, 45px);
-  background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/wiki-logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0% 50%;
-}
-
 h1 {
   font-size: 28px;
   font-weight: 400;
@@ -91,7 +79,7 @@ ul.menu li a {
   line-height: 18px;
 }
 
-div:first-child div h2 {
+body > div:nth-child(2) div h2 {
   margin-top: 30px;
   margin-bottom: 5px;
   font-size: 22px;
@@ -100,7 +88,7 @@ div:first-child div h2 {
   width: max-content;
 }
 
-div:first-child div h2:after {
+body > div:nth-child(2) div h2:after {
   content: "";
   display: inline-block;
   position: relative;
@@ -112,11 +100,11 @@ div:first-child div h2:after {
   background-repeat: no-repeat;
 }
 
-div:first-child div.practice h2:after {
+body > div:nth-child(2) div.practice h2:after {
   background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/practice.png");
 }
 
-div:first-child div.reviews h2:after {
+body > div:nth-child(2) div.reviews h2:after {
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
@@ -124,11 +112,11 @@ div:first-child div.reviews h2:after {
   background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/reviews.png");
 }
 
-div:first-child div.recommendations h2:after {
+body > div:nth-child(2) div.recommendations h2:after {
   background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/recommendations.png");
 }
 
-div:first-child div.about h2:after {
+body > div:nth-child(2) div.about h2:after {
   background-size: 19px 19px;
   width: 19px;
   height: 19px;
@@ -136,7 +124,7 @@ div:first-child div.about h2:after {
   background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/user.png");
 }
 
-div:first-child div.contact h2:after {
+body > div:nth-child(2) div.contact h2:after {
   background-size: 18px 18px;
   width: 18px;
   height: 18px;
@@ -144,7 +132,7 @@ div:first-child div.contact h2:after {
   background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/contact.png");
 }
 
-div:first-child div.related h2:after {
+body > div:nth-child(2) div.related h2:after {
   background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/similar-lawyers.png");
   background-size: 24px 24px;
   width: 24px;
@@ -267,7 +255,7 @@ p.avvo::before {
   background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/avvo.png");
 }
 
-div:first-child {
+body > div:nth-child(2) {
   width: calc(88vw - 465px);
   padding-right: 4vw;
 }
@@ -298,7 +286,7 @@ body::after {
 }
 
 @media (max-width: 980px) {
-  div:first-child {
+  body > div:nth-child(2) {
     width: 88vw;
     padding-right: 0;
   }
