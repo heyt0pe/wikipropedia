@@ -237,10 +237,6 @@ iframe.map-frame {
   margin-bottom: 35px;
 }
 
-p.linkedin {
-  margin-bottom: 7px;
-}
-
 p.linkedin,
 p.fb,
 p.avvo {
@@ -253,6 +249,10 @@ p.avvo a {
   font-size: 14px;
   position: relative;
   top: -3px;
+}
+
+p.linkedin{
+  margin-top: 35px;
 }
 
 p.linkedin::before {
@@ -269,7 +269,7 @@ p.avvo::before {
   content: "";
   display: inline-block;
   width: 85px;
-  height: 15px;
+  height: 18px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("https://heyt0pe.github.io/wikipropedia/assets/avvo.png");
@@ -278,14 +278,13 @@ p.avvo::before {
 p.fb::before {
   content: "";
   display: inline-block;
-  width: 80px;
+  width: 85px;
   height: 18px;
-  margin-right: 5px; 
   position: relative;
   top: 2px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("https://heyt0pe.github.io/wikipropedia/assets/facebook.png");
+  background-image: url("assets/facebook.png");
 }
 
 body > div:nth-child(2) {
