@@ -12,6 +12,7 @@ body {
   background: #fff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 6vw;
+  padding-bottom: 0;
   padding-top: min(3vw, 45px);
   font-size: 14px;
   color: #202124;
@@ -40,8 +41,8 @@ p span:first-child {
 p span:first-child:after {
   content: "\ef76";
   font-size: 18px;
-  font-family: 'Material Icons';
-  color: #4BB543;
+  font-family: "Material Icons";
+  color: #4bb543;
   position: relative;
   top: 4px;
 }
@@ -77,7 +78,7 @@ ul.menu {
   font-size: 14px;
 }
 
-ul.menu li{
+ul.menu li {
   cursor: pointer;
 }
 
@@ -92,24 +93,24 @@ ul.menu li a {
 }
 
 ul.menu li:nth-child(1)::before {
-  content: '\e90e';
+  content: "\e90e";
   font-size: 20px;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   color: #1a0dab;
   margin-left: 10px;
 }
 
 ul.menu li:nth-child(2)::before {
-  content: '\e853';
+  content: "\e853";
   font-size: 20px;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   color: #1a0dab;
 }
 
 ul.menu li:nth-child(3)::before {
-  content: '\e0cf';
+  content: "\e0cf";
   font-size: 20px;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   color: #1a0dab;
 }
 
@@ -251,7 +252,7 @@ p.avvo a {
   top: -3px;
 }
 
-p.linkedin{
+p.linkedin {
   margin-top: 35px;
 }
 
@@ -293,15 +294,17 @@ body > div:nth-child(2) {
 }
 
 p.footer {
-  min-width: 100%;
+  width: 100vw;
+  margin-left: -6vw;
   background-color: #808080;
-  padding: 20px 15px;
-  color: #fff;
+  padding: 40px 6vw;
+  background: #f2f2f2;
+  color: #4d5156;
+  font-weight: bold;
 }
 
 p.footer a {
-  text-decoration: underline;
-  color: #fff;
+  text-decoration: none;
 }
 
 body::after {
@@ -326,7 +329,7 @@ body::after {
   body::after {
     content: "";
     top: unset;
-    bottom: -4vh;
+    bottom: 1.5vh;
     width: min(95vw, 370px);
     height: 200px;
     background-size: contain;
