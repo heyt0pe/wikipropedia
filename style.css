@@ -357,7 +357,7 @@ p.fb::before {
   top: 2px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("assets/facebook.png");
+  background-image: url("https://heyt0pe.github.io/wikipropedia/assets/facebook.png");
 }
 
 body > div:nth-child(2) {
