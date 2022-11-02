@@ -1,4 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/google-sans");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 * {
   margin: 0;
@@ -37,15 +38,12 @@ p span:first-child {
 }
 
 p span:first-child:after {
-  content: " ";
-  display: inline-block;
+  content: "\ef76";
+  font-size: 18px;
+  font-family: 'Material Icons';
+  color: #4BB543;
   position: relative;
-  top: 3.5px;
-  width: 18px;
-  height: 18px;
-  background-image: url("https://heyt0pe.github.io/LandVigo/assets/images/wikipropedia/verified.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  top: 4px;
 }
 
 img {
@@ -69,14 +67,50 @@ p {
 }
 
 ul.menu {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 20px;
   display: flex;
   gap: 15px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #eaeaea;
+  width: fit-content;
+  font-size: 14px;
+}
+
+ul.menu li{
+  cursor: pointer;
 }
 
 ul.menu li a {
+  font-size: 14px;
   line-height: 18px;
+  text-decoration: none;
+  position: relative;
+  top: -4px;
+  margin-left: 3px;
+  margin-right: 15px;
+}
+
+ul.menu li:nth-child(1)::before {
+  content: '\e90e';
+  font-size: 20px;
+  font-family: 'Material Icons';
+  color: #1a0dab;
+  margin-left: 10px;
+}
+
+ul.menu li:nth-child(2)::before {
+  content: '\e853';
+  font-size: 20px;
+  font-family: 'Material Icons';
+  color: #1a0dab;
+}
+
+ul.menu li:nth-child(3)::before {
+  content: '\e0cf';
+  font-size: 20px;
+  font-family: 'Material Icons';
+  color: #1a0dab;
 }
 
 body > div:nth-child(2) div h2 {
@@ -195,9 +229,12 @@ div.related div.profile p a {
 }
 
 iframe.map-frame {
-  margin: 20px 0;
+  margin: 10px 0;
   border: none;
+  width: min(100%, 620px);
+  height: 400px;
   display: block;
+  margin-bottom: 35px;
 }
 
 p.linkedin {
@@ -221,7 +258,7 @@ p.avvo a {
 p.linkedin::before {
   content: "";
   display: inline-block;
-  width: 75px;
+  width: 85px;
   height: 18px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -231,8 +268,8 @@ p.linkedin::before {
 p.avvo::before {
   content: "";
   display: inline-block;
-  width: 75px;
-  height: 18px;
+  width: 85px;
+  height: 15px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("https://heyt0pe.github.io/wikipropedia/assets/avvo.png");
@@ -241,8 +278,11 @@ p.avvo::before {
 p.fb::before {
   content: "";
   display: inline-block;
-  width: 75px;
+  width: 80px;
   height: 18px;
+  margin-right: 5px; 
+  position: relative;
+  top: 2px;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("https://heyt0pe.github.io/wikipropedia/assets/facebook.png");
