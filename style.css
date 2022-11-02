@@ -305,13 +305,14 @@ p.footer {
 
 p.footer a {
   text-decoration: none;
+  font-weight: 400;
 }
 
 body::after {
   content: "";
   position: fixed;
   top: 12vh;
-  right: 2vw;
+  right: 6vw;
   width: 365px;
   height: 75vh;
   background-image: url("https://heyt0pe.github.io/wikipropedia/assets/chat-large.png");
