@@ -16,6 +16,7 @@ body {
   padding-top: min(3vw, 45px);
   font-size: 14px;
   color: #202124;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -361,7 +362,7 @@ p.fb::before {
 }
 
 body > div:nth-child(2) {
-  width: calc(88vw - 465px);
+  width: calc(95vw - 465px);
   padding-right: 4vw;
 }
 
@@ -372,7 +373,7 @@ p.footer {
   padding: 40px 6vw;
   background: #f2f2f2;
   color: #4d5156;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 p.footer a {
