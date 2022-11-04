@@ -156,7 +156,7 @@ div.reviews li a[href="#Contact"]::before {
   height: 12px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("https://heyt0pe.github.io/wikipropedia/assets/avvo.png");
+  background-image: url("../icon/avvo.png");
 }
 
 div.recommendations li a[href="#Contact"] {
@@ -172,7 +172,7 @@ div.recommendations li a[href="#Contact"]::before {
   height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("https://heyt0pe.github.io/wikipropedia/assets/linkedin.png");
+  background-image: url("../icon/linkedin.png");
 }
 
 div.reviews li:last-child,
@@ -336,7 +336,7 @@ p.linkedin::before {
   height: 18px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("https://heyt0pe.github.io/wikipropedia/assets/linkedin.png");
+  background-image: url("../icon/linkedin.png");
 }
 
 p.avvo::before {
@@ -346,7 +346,7 @@ p.avvo::before {
   height: 18px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("https://heyt0pe.github.io/wikipropedia/assets/avvo.png");
+  background-image: url("../icon/avvo.png");
 }
 
 p.fb::before {
@@ -358,7 +358,7 @@ p.fb::before {
   top: 2px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("https://heyt0pe.github.io/wikipropedia/assets/facebook.png");
+  background-image: url("../icon/facebook.png");
 }
 
 body > div:nth-child(2) {
@@ -388,7 +388,7 @@ body::after {
   right: 6vw;
   width: 365px;
   height: 75vh;
-  background-image: url("https://heyt0pe.github.io/wikipropedia/assets/chat-large.png");
+  background-image: url("../icon/chat-large.png");
   background-repeat: no-repeat;
   background-position: 0% 50%;
   background-size: 100% 100%;
@@ -407,6 +407,6 @@ body::after {
     width: min(95vw, 370px);
     height: 200px;
     background-size: contain;
-    background-image: url("https://heyt0pe.github.io/wikipropedia/assets/chat-mobile.png");
+    background-image: url("../icon/chat-mobile.png");
   }
 }
