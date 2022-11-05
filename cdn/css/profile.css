@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/google-sans");
+@import url("//fonts.cdnfonts.com/css/google-sans");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 * {
@@ -156,7 +156,7 @@ div.reviews li a[href="#Contact"]::before {
   height: 12px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../icon/avvo.png");
+  background-image: url("/cdn/icon/avvo.png");
 }
 
 div.recommendations li a[href="#Contact"] {
@@ -172,7 +172,7 @@ div.recommendations li a[href="#Contact"]::before {
   height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../icon/linkedin.png");
+  background-image: url("/cdn/icon/linkedin.png");
 }
 
 div.reviews li:last-child,
@@ -279,20 +279,19 @@ div.related div.profile {
   display: flex;
 }
 
-div.related div.profile p {
+div.related div.profile {
   display: flex;
   gap: 10px;
-  font-size: 0;
 }
 
-div.related div.profile p img {
+div.related div.profile img {
   min-width: 50px;
   max-width: 50px;
   min-height: 67px;
   max-height: 67px;
 }
 
-div.related div.profile p a {
+div.related div.profile div a {
   font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -336,7 +335,7 @@ p.linkedin::before {
   height: 18px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../icon/linkedin.png");
+  background-image: url("/cdn/icon/linkedin.png");
 }
 
 p.avvo::before {
@@ -346,7 +345,7 @@ p.avvo::before {
   height: 18px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../icon/avvo.png");
+  background-image: url("/cdn/icon/avvo.png");
 }
 
 p.fb::before {
@@ -358,12 +357,20 @@ p.fb::before {
   top: 2px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../icon/facebook.png");
+  background-image: url("/cdn/icon/facebook.png");
 }
 
 body > div:nth-child(2) {
-  width: calc(95vw - 465px);
+  max-width: 60vw;
   padding-right: 4vw;
+}
+
+@media (max-width: 980px) {
+  body > div:nth-child(2) {
+    width: 88vw;
+    padding-right: 0;
+    max-width: 88vw;
+  }
 }
 
 p.footer {
@@ -379,34 +386,4 @@ p.footer {
 p.footer a {
   text-decoration: none;
   font-weight: 400;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  top: 12vh;
-  right: 6vw;
-  width: 365px;
-  height: 75vh;
-  background-image: url("../icon/chat-large.png");
-  background-repeat: no-repeat;
-  background-position: 0% 50%;
-  background-size: 100% 100%;
-}
-
-@media (max-width: 980px) {
-  body > div:nth-child(2) {
-    width: 88vw;
-    padding-right: 0;
-  }
-
-  body::after {
-    content: "";
-    top: unset;
-    bottom: 1.5vh;
-    width: min(95vw, 370px);
-    height: 200px;
-    background-size: contain;
-    background-image: url("../icon/chat-mobile.png");
-  }
 }
